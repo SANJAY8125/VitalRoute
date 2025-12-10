@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<edges xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/edges_file.xsd">
+    <!-- Horizontal Roads (West to East) -->
+    <edge id="W1toJ1" from="W1" to="J1" priority="1" numLanes="2" speed="13.89"/>
+    <edge id="J1toJ2" from="J1" to="J2" priority="1" numLanes="2" speed="13.89"/>
+    <edge id="J2toJ3" from="J2" to="J3" priority="1" numLanes="2" speed="13.89"/>
+    <edge id="J3toE1" from="J3" to="E1" priority="1" numLanes="2" speed="13.89"/>
+    
+    <edge id="W2toJ4" from="W2" to="J4" priority="1" numLanes="2" speed="13.89"/>
+    <edge id="J4toJ5" from="J4" to="J5" priority="1" numLanes="2" speed="13.89"/>
+    <edge id="J5toJ6" from="J5" to="J6" priority="1" numLanes="2" speed="13.89"/>
+    <edge id="J6toE2" from="J6" to="E2" priority="1" numLanes="2" speed="13.89"/>
+    
+    <!-- Horizontal Roads (East to West) -->
+    <edge id="E1toJ3" from="E1" to="J3" priority="1" numLanes="2" speed="13.89"/>
+    <edge id="J3toJ2" from="J3" to="J2" priority="1" numLanes="2" speed="13.89"/>
+    <edge id="J2toJ1" from="J2" to="J1" priority="1" numLanes="2" speed="13.89"/>
+    <edge id="J1toW1" from="J1" to="W1" priority="1" numLanes="2" speed="13.89"/>
+    
+    <edge id="E2toJ6" from="E2" to="J6" priority="1" numLanes="2" speed="13.89"/>
+    <edge id="J6toJ5" from="J6" to="J5" priority="1" numLanes="2" speed="13.89"/>
+    <edge id="J5toJ4" from="J5" to="J4" priority="1" numLanes="2" speed="13.89"/>
+    <edge id="J4toW2" from="J4" to="W2" priority="1" numLanes="2" speed="13.89"/>
+    
+    <!-- Vertical Roads (North to South) -->
+    <edge id="N1toJ1" from="N1" to="J1" priority="1" numLanes="2" speed="13.89"/>
+    <edge id="J1toJ4" from="J1" to="J4" priority="1" numLanes="2" speed="13.89"/>
+    <edge id="J4toS1" from="J4" to="S1" priority="1" numLanes="2" speed="13.89"/>
+    
+    <edge id="N2toJ2" from="N2" to="J2" priority="1" numLanes="2" speed="13.89"/>
+    <edge id="J2toJ5" from="J2" to="J5" priority="1" numLanes="2" speed="13.89"/>
+    <edge id="J5toS2" from="J5" to="S2" priority="1" numLanes="2" speed="13.89"/>
+    
+    <edge id="N3toJ3" from="N3" to="J3" priority="1" numLanes="2" speed="13.89"/>
+    <edge id="J3toJ6" from="J3" to="J6" priority="1" numLanes="2" speed="13.89"/>
+    <edge id="J6toS3" from="J6" to="S3" priority="1" numLanes="2" speed="13.89"/>
+    
+    <!-- Vertical Roads (South to North) -->
+    <edge id="S1toJ4" from="S1" to="J4" priority="1" numLanes="2" speed="13.89"/>
+    <edge id="J4toJ1" from="J4" to="J1" priority="1" numLanes="2" speed="13.89"/>
+    <edge id="J1toN1" from="J1" to="N1" priority="1" numLanes="2" speed="13.89"/>
+    
+    <edge id="S2toJ5" from="S2" to="J5" priority="1" numLanes="2" speed="13.89"/>
+    <edge id="J5toJ2" from="J5" to="J2" priority="1" numLanes="2" speed="13.89"/>
+    <edge id="J2toN2" from="J2" to="N2" priority="1" numLanes="2" speed="13.89"/>
+    
+    <edge id="S3toJ6" from="S3" to="J6" priority="1" numLanes="2" speed="13.89"/>
+    <edge id="J6toJ3" from="J6" to="J3" priority="1" numLanes="2" speed="13.89"/>
+    <edge id="J3toN3" from="J3" to="N3" priority="1" numLanes="2" speed="13.89"/>
+</edges>

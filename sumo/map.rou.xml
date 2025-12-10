@@ -1,0 +1,58 @@
+﻿﻿<?xml version="1.0" encoding="UTF-8"?>
+<routes>
+    <!-- Vehicle Types -->
+    <vType id="car" accel="2.6" decel="4.5" sigma="0.5" length="5" minGap="2.5" maxSpeed="16.67" color="1,1,0"/>
+    <vType id="ambulance" accel="3.5" decel="6.0" sigma="0.0" length="7" minGap="3.0" maxSpeed="22.22" vClass="emergency" guiShape="emergency" color="1,0,0"/>
+    <vType id="bus" accel="2.0" decel="4.0" sigma="0.5" length="12" minGap="3.0" maxSpeed="13.89" vClass="bus" guiShape="bus" color="0,1,0"/>
+    
+    <!-- Diverse Routes for cars (straight, left, right) -->
+    <route id="WE_top_straight" edges="W1toJ1 J1toJ2 J2toJ3 J3toE1"/>
+    <route id="WE_top_left" edges="W1toJ1 J1toJ4 J4toW2"/>
+    <route id="WE_top_right" edges="W1toJ1 J1toN1"/>
+    <route id="WE_bottom_straight" edges="W2toJ4 J4toJ5 J5toJ6 J6toE2"/>
+    <route id="WE_bottom_left" edges="W2toJ4 J4toJ1 J1toW1"/>
+    <route id="WE_bottom_right" edges="W2toJ4 J4toS1"/>
+    <route id="EW_top_straight" edges="E1toJ3 J3toJ2 J2toJ1 J1toW1"/>
+    <route id="EW_top_left" edges="E1toJ3 J3toJ6 J6toS3"/>
+    <route id="EW_top_right" edges="E1toJ3 J3toN3"/>
+    <route id="EW_bottom_straight" edges="E2toJ6 J6toJ5 J5toJ4 J4toW2"/>
+    <route id="EW_bottom_left" edges="E2toJ6 J6toJ3 J3toE1"/>
+    <route id="EW_bottom_right" edges="E2toJ6 J6toJ3 J3toN3"/>
+    <route id="NS_left_straight" edges="N1toJ1 J1toJ4 J4toS1"/>
+    <route id="NS_left_left" edges="N1toJ1 J1toW1"/>
+    <route id="NS_left_right" edges="N1toJ1 J1toJ2 J2toN2"/>
+    <route id="NS_middle_straight" edges="N2toJ2 J2toJ5 J5toS2"/>
+    <route id="NS_middle_left" edges="N2toJ2 J2toJ1 J1toW1"/>
+    <route id="NS_middle_right" edges="N2toJ2 J2toJ3 J3toE1"/>
+    <route id="NS_right_straight" edges="N3toJ3 J3toJ6 J6toS3"/>
+    <route id="NS_right_left" edges="N3toJ3 J3toJ2 J2toJ1 J1toW1"/>
+    <route id="NS_right_right" edges="N3toJ3 J3toE1"/>
+    <route id="emergency1" edges="N1toJ1 J1toJ2 J2toJ3 J3toJ6 J6toS3" color="1,0,0"/>
+    <route id="emergency2" edges="W1toJ1 J1toJ2 J2toJ3 J3toJ6 J6toS3" color="1,0,0"/>
+    
+    <flow id="flow_WE_top_straight" type="car" route="WE_top_straight" begin="0" end="3600" period="10"/>
+    <flow id="flow_WE_top_left" type="car" route="WE_top_left" begin="0" end="3600" period="15"/>
+    <flow id="flow_WE_top_right" type="car" route="WE_top_right" begin="0" end="3600" period="15"/>
+    <flow id="flow_WE_bottom_straight" type="car" route="WE_bottom_straight" begin="0" end="3600" period="10"/>
+    <flow id="flow_WE_bottom_left" type="car" route="WE_bottom_left" begin="0" end="3600" period="15"/>
+    <flow id="flow_WE_bottom_right" type="car" route="WE_bottom_right" begin="0" end="3600" period="15"/>
+    <flow id="flow_EW_top_straight" type="car" route="EW_top_straight" begin="0" end="3600" period="10"/>
+    <flow id="flow_EW_top_left" type="car" route="EW_top_left" begin="0" end="3600" period="15"/>
+    <flow id="flow_EW_top_right" type="car" route="EW_top_right" begin="0" end="3600" period="15"/>
+    <flow id="flow_EW_bottom_straight" type="car" route="EW_bottom_straight" begin="0" end="3600" period="10"/>
+    <flow id="flow_EW_bottom_left" type="car" route="EW_bottom_left" begin="0" end="3600" period="15"/>
+    <flow id="flow_EW_bottom_right" type="car" route="EW_bottom_right" begin="0" end="3600" period="15"/>
+    <flow id="flow_NS_left_straight" type="car" route="NS_left_straight" begin="0" end="3600" period="10"/>
+    <flow id="flow_NS_left_left" type="car" route="NS_left_left" begin="0" end="3600" period="15"/>
+    <flow id="flow_NS_left_right" type="car" route="NS_left_right" begin="0" end="3600" period="15"/>
+    <flow id="flow_NS_middle_straight" type="car" route="NS_middle_straight" begin="0" end="3600" period="10"/>
+    <flow id="flow_NS_middle_left" type="car" route="NS_middle_left" begin="0" end="3600" period="15"/>
+    <flow id="flow_NS_middle_right" type="car" route="NS_middle_right" begin="0" end="3600" period="15"/>
+    <flow id="flow_NS_right_straight" type="car" route="NS_right_straight" begin="0" end="3600" period="10"/>
+    <flow id="flow_NS_right_left" type="car" route="NS_right_left" begin="0" end="3600" period="15"/>
+    <flow id="flow_NS_right_right" type="car" route="NS_right_right" begin="0" end="3600" period="15"/>
+
+    <!-- Multiple ambulances on different routes -->
+    <vehicle id="ambulance_1" type="ambulance" route="emergency1" depart="50" color="1,0,0"/>
+    <vehicle id="ambulance_2" type="ambulance" route="emergency2" depart="50" color="1,0,0"/>
+</routes>

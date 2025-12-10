@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nodes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/nodes_file.xsd">
+    <!-- Main Junctions in 2x3 Grid -->
+    <node id="J1" x="0.00" y="200.00" type="traffic_light"/>
+    <node id="J2" x="200.00" y="200.00" type="traffic_light"/>
+    <node id="J3" x="400.00" y="200.00" type="traffic_light"/>
+    <node id="J4" x="0.00" y="0.00" type="traffic_light"/>
+    <node id="J5" x="200.00" y="0.00" type="traffic_light"/>
+    <node id="J6" x="400.00" y="0.00" type="traffic_light"/>
+    
+    <!-- Entry/Exit Points -->
+    <node id="W1" x="-200.00" y="200.00" type="priority"/> <!-- West Entry/Exit Top -->
+    <node id="W2" x="-200.00" y="0.00" type="priority"/>   <!-- West Entry/Exit Bottom -->
+    <node id="E1" x="600.00" y="200.00" type="priority"/>  <!-- East Entry/Exit Top -->
+    <node id="E2" x="600.00" y="0.00" type="priority"/>    <!-- East Entry/Exit Bottom -->
+    <node id="N1" x="0.00" y="400.00" type="priority"/>    <!-- North Entry/Exit Left -->
+    <node id="N2" x="200.00" y="400.00" type="priority"/>  <!-- North Entry/Exit Middle -->
+    <node id="N3" x="400.00" y="400.00" type="priority"/>  <!-- North Entry/Exit Right -->
+    <node id="S1" x="0.00" y="-200.00" type="priority"/>   <!-- South Entry/Exit Left -->
+    <node id="S2" x="200.00" y="-200.00" type="priority"/> <!-- South Entry/Exit Middle -->
+    <node id="S3" x="400.00" y="-200.00" type="priority"/> <!-- South Entry/Exit Right -->
+</nodes>
