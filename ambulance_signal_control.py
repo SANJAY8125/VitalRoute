@@ -5,7 +5,7 @@ import random
 
 # Configuration
 SUMO_BINARY = "sumo-gui"  # or "sumo" for CLI
-CONFIG_FILE = "map.sumocfg"
+CONFIG_FILE = "sumo/map.sumocfg"
 AMBULANCE_IDS = ["ambulance_1", "ambulance_2"]  # List of ambulance IDs
 JUNCTIONS = ["J1", "J2", "J3", "J4", "J5", "J6"]
 
